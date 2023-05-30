@@ -1,0 +1,134 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, ul, li, p, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+/* Main styles */
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.note-list li {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.note-actions a {
+    margin-right: 10px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.note-actions a:hover {
+    color: #ffc107;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffc107;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Icons */
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.icon-add:before {
+    content: '\002B';
+}
+
+.icon-edit:before {
+    content: '\270E';
+}
+
+.icon-delete:before {
+    content: '\2716';
+}
+
+.icon-login:before {
+    content: '\1F511';
+}
+
+.icon-register:before {
+    content: '\1F4E9';
+}

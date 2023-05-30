@@ -1,0 +1,38 @@
+{% extends 'main.html' %}
+
+{% block content %}
+
+    <main>
+        <section id="notes">
+            <h2>All Notes</h2>
+            <ul class="note-list">
+                <li>
+                    <h3>Note Title</h3>
+                    <p>Note Content</p>
+                    <div class="note-actions">
+                        <a href="/notes/edit/1">Edit</a>
+                        <a href="/notes/delete/1">Delete</a>
+                    </div>
+                </li>
+                <!-- Repeat the above list item structure for each note -->
+            </ul>
+        </section>
+
+        <section id="add-note">
+            <h2>Add Note</h2>
+            <form action="/notes/create" method="POST">
+                <input type="text" name="title" placeholder="Title" required>
+                <textarea name="content" placeholder="Content" required></textarea>
+                <button type="submit">Add Note</button>
+            </form>
+        </section>
+
+        <section id="add-task">
+            <h2>Add Task</h2>
+            <form action="/tasks/create" method="POST">
+                <input type="text" name="task" placeholder="Task" required>
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+    </main>
+{% endblock %}
